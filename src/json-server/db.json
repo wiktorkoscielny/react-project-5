@@ -1,9 +1,19 @@
 {
-    "todos": [
-        {
-            "firstName": "Wiktor",
-            "lastName": "Koscielny",
-            "id": 1
-        }
-    ]
+  "todos": [
+    {
+      "firstName": "Wiktor",
+      "lastName": "Koscielny",
+      "id": 1
+    },
+    {
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "id": 2
+    },
+    {
+      "firstName": "Janina",
+      "lastName": "Kowalska",
+      "id": 3
+    }
+  ]
 }
