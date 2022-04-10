@@ -1,5 +1,14 @@
 import { Component } from "react";
 import axios from "axios";
+import styled from "styled-components";
+
+const Wrapper = styled.div`
+        width: fit-content;
+        text-align: center;
+        margin-top: 3%;
+        margin-left: auto;
+        margin-right: auto;
+`
 
 class TodoApp extends Component {
     state = {
@@ -108,18 +117,33 @@ class TodoApp extends Component {
                     </input>
                     <button type="submit">Add</button>
                 </form>
+                
 
+            <Wrapper>
 
-                <ul>
+                <table border='3'>
+                <caption>Users</caption>
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
                     {this.state.todos.map((todo) => {
                         return(
-                            <li key={todo.id}>
-                                {todo.firstName}
-                                <button onClick={() => this.handleDelete(todo.id)}>X</button>
-                            </li>
+                            <tr key={todo.id}>
+                                <td>{todo.firstName}</td>
+                                <td>{todo.lastName}</td>
+                                <td><button onClick={() => this.handleDelete(todo.id)}>X</button></td>
+                            </tr>
                         )
                     })}
-                </ul>
+                </tbody>
+                </table>
+            </Wrapper>
+
             </>
         )
     }
@@ -127,3 +151,14 @@ class TodoApp extends Component {
 }
 
 export default TodoApp;
+
+// <ul>
+//  {this.state.todos.map((todo) => {
+//      return(
+//          <li key={todo.id}>
+//              {todo.firstName}
+//              <button onClick={() => this.handleDelete(todo.id)}>X</button>
+//          </li>
+//      )
+//  })}
+// </ul>

@@ -11,9 +11,24 @@
       "id": 2
     },
     {
-      "firstName": "Janina",
-      "lastName": "Kowalska",
+      "firstName": "Bogdan ",
+      "lastName": "Kmiecic",
       "id": 3
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Momoa",
+      "id": 4
+    },
+    {
+      "firstName": "Umaiza",
+      "lastName": "Hook",
+      "id": 5
+    },
+    {
+      "firstName": "Javier",
+      "lastName": "Woodart",
+      "id": 6
     }
   ]
 }
