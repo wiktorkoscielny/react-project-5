@@ -67,14 +67,19 @@ class TodoApp extends Component {
         }
     }
 
-    handleDelete = (id) => {
-        let todos = this.state.todos.filter(item => item.id !== id)
-        // then set state to todos without deleted todos
-        this.setState({ todos })
-        axios.delete(`http://localhost:3000/todos/${id}`)
-        .then(res => {
-            console.log(res);
-        })
+    handleDelete = async (id) => {
+        try 
+        {
+            let todos = this.state.todos.filter(item => item.id !== id);
+            // then set state to todos without deleted todos
+            this.setState({ todos });
+            await axios.delete(`http://localhost:3000/todos/${id}`)
+            .then(res => {
+                console.log(res);
+            })
+        } catch (err) {
+            console.log(err)
+        }
     }
 
     render() {
