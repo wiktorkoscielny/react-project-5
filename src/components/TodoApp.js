@@ -79,9 +79,11 @@ class TodoApp extends Component {
     handleDelete = async (id) => {
         try 
         {
+            // rove item from ui
             let todos = this.state.todos.filter(item => item.id !== id);
             // then set state to todos without deleted todos
             this.setState({ todos });
+            // delete data from api
             await axios.delete(`http://localhost:3000/todos/${id}`)
             .then(res => {
                 console.log(res);
@@ -89,6 +91,10 @@ class TodoApp extends Component {
         } catch (err) {
             console.log(err)
         }
+    }
+
+    deleteAll = () => {
+        
     }
 
     render() {
@@ -141,7 +147,14 @@ class TodoApp extends Component {
                         )
                     })}
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td colSpan="3"></td>
+                        <td><button onClick={() => this.handleDelete(todo.id)}></button></td>
+                    </tr>
+                </tfoot>
                 </table>
+                
             </Wrapper>
 
             </>
