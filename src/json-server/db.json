@@ -1,15 +1,15 @@
 {
   "todos": [
     {
-      "firstName": "FirstName",
-      "lastName": "SecondName",
-      "salary": "3000",
+      "firstName": "Jan ",
+      "lastName": "Kowalski",
+      "salary": "3200",
       "id": 1
     },
     {
-      "firstName": "Employee1",
-      "lastName": "Employee2",
-      "salary": "3040",
+      "firstName": "Janina",
+      "lastName": "Kowalska",
+      "salary": "3540",
       "id": 2
     }
   ]

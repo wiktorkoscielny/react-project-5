@@ -14,8 +14,10 @@ To handle input fields I have created some asynchronous functions which use axio
 
 I'm still working on some functionalities...
 - [x] Salary sum
-- [] Delete all todo
-- [] Search 
+- [ ] Delete all todo
+- [ ] Search 
+
+![preview1](./img1.png)
 
 ## Setup
 
