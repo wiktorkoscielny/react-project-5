@@ -16,11 +16,8 @@ I'm still working on some functionalities...
 - [x] Salary sum
 - [ ] Delete all todo
 - [ ] Search 
-<<<<<<< HEAD
 
 ![preview1](./img1.png)
-
-
 ## Setup
 
 1. Install axios: `$ npm install axios` or `$ yarn add axios`
