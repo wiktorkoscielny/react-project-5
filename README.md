@@ -16,8 +16,11 @@ I'm still working on some functionalities...
 - [x] Salary sum
 - [ ] Delete all todo
 - [ ] Search 
+<<<<<<< HEAD
 
 ![preview1](./img1.png)
+=======
+>>>>>>> 48b5fbce219045bfae40a67c464977ae68f26693
 
 ## Setup
 
